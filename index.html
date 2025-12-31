@@ -557,6 +557,26 @@
     </div>
 
     <script>
+        // Visitor Counter using CountAPI
+        async function updateVisitorCount() {
+            try {
+                // Using CountAPI - creates a unique counter for your page
+                // Replace 'kaveen-newyear-2026' with your unique namespace
+                const namespace = 'kaveen-newyear-2026';
+                const key = 'page-visits';
+                const response = await fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`);
+                const data = await response.json();
+
+                // Log to console (only you can see this by pressing F12)
+                console.log('🎉 Total Page Visits:', data.value);
+            } catch (error) {
+                console.error('Error tracking visit:', error);
+            }
+        }
+
+        // Call the function when page loads
+        updateVisitorCount();
+
         // Create stars
         const starsContainer = document.getElementById('stars');
         for (let i = 0; i < 150; i++) {
