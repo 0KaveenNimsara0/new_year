@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Happy New Year 2026! Wishing you joy, success, and prosperity in the year ahead.">
+    <title>Happy New Year 2026 🎉</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            overflow-x: hidden;
+            color: white;
+            position: relative;
+            padding: 2rem 0;
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 3s infinite;
+        }
+
+        @keyframes twinkle {
+
+            0%,
+            100% {
+                opacity: 0.3;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.5);
+            }
+        }
+
+        .container {
+            position: relative;
+            z-index: 10;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #fff, #f093fb, #fff);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shimmer 3s ease-in-out infinite;
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+        }
+
+        @keyframes shimmer {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .year {
+            font-size: clamp(4rem, 15vw, 8rem);
+            font-weight: 800;
+            margin: 1rem 0;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .celebration-emoji {
+            font-size: 4rem;
+            margin: 1rem 0;
+            animation: rotate 4s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            opacity: 0.95;
+            margin-top: 1rem;
+        }
+
+        .wishes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .wish-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 25px;
+            padding: 2.5rem 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            animation: fadeInUp 1s ease-out backwards;
+        }
+
+        .wish-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .wish-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .wish-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .wish-card:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .wish-card:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+
+        .wish-card:nth-child(6) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px) scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .wish-card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 15px 45px 0 rgba(31, 38, 135, 0.5);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .wish-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            animation: iconFloat 3s ease-in-out infinite;
+        }
+
+        @keyframes iconFloat {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .wish-card:hover .wish-icon {
+            animation: iconSpin 0.6s ease-in-out;
+        }
+
+        @keyframes iconSpin {
+            0% {
+                transform: rotate(0deg) scale(1);
+            }
+
+            50% {
+                transform: rotate(180deg) scale(1.2);
+            }
+
+            100% {
+                transform: rotate(360deg) scale(1);
+            }
+        }
+
+        .wish-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #fff 0%, #f093fb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .wish-text {
+            font-size: 1rem;
+            line-height: 1.6;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .main-message {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(25px);
+            border-radius: 30px;
+            padding: 3rem 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            text-align: center;
+            margin: 4rem 0 3rem;
+            animation: fadeIn 1.5s ease-out 0.7s backwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .main-message p {
+            font-size: 1.3rem;
+            line-height: 2;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+
+        .main-message strong {
+            font-weight: 700;
+            background: linear-gradient(45deg, #fff, #f093fb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .sparkle {
+            display: inline-block;
+            animation: sparkle 1.5s ease-in-out infinite;
+        }
+
+        @keyframes sparkle {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.5;
+                transform: scale(1.3);
+            }
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 4rem;
+            font-size: 1rem;
+            opacity: 0.8;
+            animation: fadeIn 2s ease-out 1s backwards;
+        }
+
+        .footer-icon {
+            color: #ff6b9d;
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+
+        @keyframes heartbeat {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            25% {
+                transform: scale(1.2);
+            }
+
+            50% {
+                transform: scale(1);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .wishes-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .wish-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .main-message {
+                padding: 2rem 1.5rem;
+            }
+
+            .main-message p {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Gradient backgrounds for cards */
+        .wish-card:nth-child(1) {
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.2) 0%, rgba(255, 142, 83, 0.2) 100%);
+        }
+
+        .wish-card:nth-child(2) {
+            background: linear-gradient(135deg, rgba(72, 219, 251, 0.2) 0%, rgba(0, 180, 219, 0.2) 100%);
+        }
+
+        .wish-card:nth-child(3) {
+            background: linear-gradient(135deg, rgba(253, 200, 48, 0.2) 0%, rgba(243, 115, 53, 0.2) 100%);
+        }
+
+        .wish-card:nth-child(4) {
+            background: linear-gradient(135deg, rgba(168, 237, 234, 0.2) 0%, rgba(254, 214, 227, 0.2) 100%);
+        }
+
+        .wish-card:nth-child(5) {
+            background: linear-gradient(135deg, rgba(185, 103, 255, 0.2) 0%, rgba(240, 147, 251, 0.2) 100%);
+        }
+
+        .wish-card:nth-child(6) {
+            background: linear-gradient(135deg, rgba(86, 171, 47, 0.2) 0%, rgba(168, 224, 99, 0.2) 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stars" id="stars"></div>
+
+    <div class="container">
+        <div class="header">
+            <h1>Happy New Year!</h1>
+            <div class="year">2026</div>
+            <div class="celebration-emoji">🎊</div>
+            <p class="subtitle">May this year bring you joy, success, and wonderful memories!</p>
+        </div>
+
+        <div class="wishes-grid">
+            <div class="wish-card">
+                <div class="wish-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3 class="wish-title">Health & Wellness</h3>
+                <p class="wish-text">May you be blessed with good health, vitality, and peace of mind throughout the
+                    year.</p>
+            </div>
+
+            <div class="wish-card">
+                <div class="wish-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h3 class="wish-title">Success & Achievement</h3>
+                <p class="wish-text">May all your goals be achieved and your dreams turn into beautiful realities.</p>
+            </div>
+
+            <div class="wish-card">
+                <div class="wish-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="wish-title">Joy & Happiness</h3>
+                <p class="wish-text">May every day be filled with laughter, joy, and moments that make your heart smile.
+                </p>
+            </div>
+
+            <div class="wish-card">
+                <div class="wish-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="wish-title">Love & Friendship</h3>
+                <p class="wish-text">May your relationships grow stronger and new friendships bloom in your life.</p>
+            </div>
+
+            <div class="wish-card">
+                <div class="wish-icon">
+                    <i class="fas fa-gem"></i>
+                </div>
+                <h3 class="wish-title">Prosperity & Wealth</h3>
+                <p class="wish-text">May abundance flow into your life and opportunities knock on your door.</p>
+            </div>
+
+            <div class="wish-card">
+                <div class="wish-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3 class="wish-title">Growth & Adventure</h3>
+                <p class="wish-text">May you embrace new experiences and discover amazing adventures along the way.</p>
+            </div>
+        </div>
+
+        <div class="main-message">
+            <p>
+                As we step into <strong>2026</strong>, let's embrace new beginnings with <span class="sparkle">✨</span>
+                open hearts and positive minds.
+            </p>
+            <p>
+                May this year be your <strong>best chapter yet</strong>, filled with <strong>unforgettable
+                    moments</strong>,
+                <strong>incredible opportunities</strong>, and <strong>boundless happiness</strong>.
+            </p>
+            <p>
+                Here's to <strong>new adventures</strong>, <strong>cherished memories</strong>, and dreams that come
+                true!
+                <span class="sparkle">🌟</span>
+            </p>
+            <p style="font-size: 1.5rem; font-weight: 600; margin-top: 2rem;">
+                Cheers to 2026! <span class="sparkle">🥂</span>
+            </p>
+        </div>
+
+        <div class="footer">
+            Made with <i class="fas fa-heart footer-icon"></i> by Kaveen Nimsara to celebrate an amazing 2026
+        </div>
+    </div>
+
+    <script>
+        // Create stars
+        const starsContainer = document.getElementById('stars');
+        for (let i = 0; i < 150; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.animationDelay = Math.random() * 3 + 's';
+            starsContainer.appendChild(star);
+        }
+
+        // Automatic fireworks
+        function launchFireworks() {
+            const firework = document.createElement('div');
+            const colors = ['#ff0844', '#ffb199', '#ffd23f', '#00d4ff', '#b967ff', '#4ade80'];
+            const color = colors[Math.floor(Math.random() * colors.length)];
+
+            const x = Math.random() * window.innerWidth;
+            const y = Math.random() * (window.innerHeight * 0.6);
+
+            for (let i = 0; i < 40; i++) {
+                const particle = document.createElement('div');
+                particle.style.position = 'fixed';
+                particle.style.width = '5px';
+                particle.style.height = '5px';
+                particle.style.borderRadius = '50%';
+                particle.style.backgroundColor = color;
+                particle.style.boxShadow = `0 0 10px ${color}`;
+                particle.style.left = x + 'px';
+                particle.style.top = y + 'px';
+                particle.style.pointerEvents = 'none';
+                particle.style.zIndex = '100';
+
+                const angle = (Math.PI * 2 * i) / 40;
+                const velocity = 3 + Math.random() * 4;
+                const vx = Math.cos(angle) * velocity;
+                const vy = Math.sin(angle) * velocity;
+
+                document.body.appendChild(particle);
+
+                let px = x;
+                let py = y;
+                let life = 1;
+                let gravity = 0.1;
+                let vyAdjusted = vy;
+
+                const animate = () => {
+                    px += vx;
+                    py += vyAdjusted;
+                    vyAdjusted += gravity;
+                    life -= 0.015;
+
+                    if (life > 0) {
+                        particle.style.left = px + 'px';
+                        particle.style.top = py + 'px';
+                        particle.style.opacity = life;
+                        requestAnimationFrame(animate);
+                    } else {
+                        particle.remove();
+                    }
+                };
+
+                animate();
+            }
+        }
+
+        // Launch fireworks periodically
+        setInterval(launchFireworks, 2000);
+
+        // Initial burst
+        setTimeout(() => {
+            for (let i = 0; i < 3; i++) {
+                setTimeout(launchFireworks, i * 300);
+            }
+        }, 1000);
+
+        // Click to create fireworks
+        document.addEventListener('click', (e) => {
+            const colors = ['#ff0844', '#ffb199', '#ffd23f', '#00d4ff', '#b967ff', '#4ade80'];
+            const color = colors[Math.floor(Math.random() * colors.length)];
+
+            for (let i = 0; i < 35; i++) {
+                const particle = document.createElement('div');
+                particle.style.position = 'fixed';
+                particle.style.width = '5px';
+                particle.style.height = '5px';
+                particle.style.borderRadius = '50%';
+                particle.style.backgroundColor = color;
+                particle.style.boxShadow = `0 0 10px ${color}`;
+                particle.style.left = e.clientX + 'px';
+                particle.style.top = e.clientY + 'px';
+                particle.style.pointerEvents = 'none';
+                particle.style.zIndex = '100';
+
+                const angle = (Math.PI * 2 * i) / 35;
+                const velocity = 2.5 + Math.random() * 3.5;
+                const vx = Math.cos(angle) * velocity;
+                const vy = Math.sin(angle) * velocity;
+
+                document.body.appendChild(particle);
+
+                let x = e.clientX;
+                let y = e.clientY;
+                let life = 1;
+                let gravity = 0.1;
+                let vyAdjusted = vy;
+
+                const animate = () => {
+                    x += vx;
+                    y += vyAdjusted;
+                    vyAdjusted += gravity;
+                    life -= 0.02;
+
+                    if (life > 0) {
+                        particle.style.left = x + 'px';
+                        particle.style.top = y + 'px';
+                        particle.style.opacity = life;
+                        requestAnimationFrame(animate);
+                    } else {
+                        particle.remove();
+                    }
+                };
+
+                animate();
+            }
+        });
+    </script>
+</body>
+
+</html>
