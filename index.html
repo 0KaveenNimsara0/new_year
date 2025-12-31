@@ -171,6 +171,47 @@
             margin-top: 1rem;
         }
 
+        .greeting-wish {
+            background: rgba(255, 215, 0, 0.15);
+            backdrop-filter: blur(25px);
+            border-radius: 30px;
+            padding: 2.5rem 2rem;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(255, 215, 0, 0.2);
+            text-align: center;
+            margin: 2rem 0 3rem;
+            animation: fadeInScale 1.2s ease-out 0.3s backwards;
+        }
+
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .greeting-wish h2 {
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .greeting-wish p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
         .wishes-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -427,6 +468,15 @@
             <div class="year">2026</div>
             <div class="celebration-emoji">🎊</div>
             <p class="subtitle">May this year bring you joy, success, and wonderful memories!</p>
+        </div>
+
+        <div class="greeting-wish">
+            <h2>🎆 Wishing You an Extraordinary Year Ahead! 🎆</h2>
+            <p>
+                As we welcome 2026, may each day bring you closer to your dreams and fill your heart with gratitude.
+                Here's to a year of boundless opportunities, cherished moments, and the courage to chase what sets your
+                soul on fire!
+            </p>
         </div>
 
         <div class="wishes-grid">
