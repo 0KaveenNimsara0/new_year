@@ -424,6 +424,39 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            body {
+                padding: 1rem 0;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .header {
+                margin-bottom: 2rem;
+            }
+
+            .celebration-emoji {
+                font-size: 3rem;
+            }
+
+            .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .greeting-wish {
+                padding: 2rem 1.5rem;
+                margin: 1.5rem 0 2rem;
+            }
+
+            .greeting-wish h2 {
+                font-size: 1.5rem;
+            }
+
+            .greeting-wish p {
+                font-size: 1rem;
+            }
+
             .wishes-grid {
                 grid-template-columns: 1fr;
                 gap: 1.5rem;
@@ -433,12 +466,87 @@
                 padding: 2rem 1.5rem;
             }
 
+            .wish-icon {
+                font-size: 3rem;
+            }
+
             .main-message {
                 padding: 2rem 1.5rem;
+                margin: 3rem 0 2rem;
             }
 
             .main-message p {
                 font-size: 1.1rem;
+                line-height: 1.8;
+            }
+
+            .footer {
+                margin-top: 3rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Extra small devices */
+        @media (max-width: 480px) {
+            body {
+                padding: 0.5rem 0;
+            }
+
+            .container {
+                padding: 0.5rem;
+            }
+
+            .year {
+                font-size: 4rem;
+            }
+
+            .celebration-emoji {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+                padding: 0 0.5rem;
+            }
+
+            .greeting-wish {
+                padding: 1.5rem 1rem;
+            }
+
+            .greeting-wish h2 {
+                font-size: 1.3rem;
+            }
+
+            .greeting-wish p {
+                font-size: 0.95rem;
+            }
+
+            .wish-card {
+                padding: 1.5rem 1rem;
+            }
+
+            .wish-icon {
+                font-size: 2.5rem;
+            }
+
+            .wish-title {
+                font-size: 1.3rem;
+            }
+
+            .wish-text {
+                font-size: 0.95rem;
+            }
+
+            .main-message {
+                padding: 1.5rem 1rem;
+            }
+
+            .main-message p {
+                font-size: 1rem;
+            }
+
+            .main-message p[style] {
+                font-size: 1.2rem !important;
             }
         }
 
